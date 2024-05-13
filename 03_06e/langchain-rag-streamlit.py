@@ -10,7 +10,7 @@ import streamlit as st
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 
 #Configure streamlit app
-st.set_page_config(page_title="Social Media Training Bot", page_icon="📖")
+st.set_page_config(page_title="My Bedrock AI Bot", page_icon="📖")
 st.title("📖 Social Media Training Bot")
 
 #Define convenience functions
@@ -40,7 +40,7 @@ def config_vector_db(filename):
 
 #Configuring the llm and vector store
 llm = config_llm()
-vectorstore_faiss = config_vector_db("03_06e/social-media-training.pdf")
+vectorstore_faiss = config_vector_db("03_06e/bedrock-ug.pdf")
 
 #Set up memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
