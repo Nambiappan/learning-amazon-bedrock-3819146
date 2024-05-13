@@ -11,7 +11,7 @@ from langchain_community.chat_message_histories import StreamlitChatMessageHisto
 
 #Configure streamlit app
 st.set_page_config(page_title="My Bedrock AI Bot", page_icon="📖")
-st.title("📖 Social Media Training Bot")
+st.title("📖 My Bedrock AI Bot")
 
 #Define convenience functions
 @st.cache_resource
